@@ -15,10 +15,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    marginBottom:80,
-    marginTop:80,
+    // alignItems: 'center',
+    // justifyContent: 'center',
+    marginBottom: 0,
+    marginTop:20,
+    flexDirection : 'row',
   },
   font:{fontSize:40},
   square: {
