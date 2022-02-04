@@ -1,12 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View,ScrollView } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
+      <ScrollView>
       <View style={styles.square} />
+      <View style={styles.square} />
+      <View style={styles.square} />
+      <View style={styles.square} />
+      <ScrollView horizontal> 
       <View style={styles.square2} />
-      <View style={styles.square3} />
+      <View style={styles.square2} />
+      <View style={styles.square2} />
+      <View style={styles.square2} />
+      </ScrollView>
+      </ScrollView>
      </View>
   );
 }
@@ -23,27 +32,26 @@ const styles = StyleSheet.create({
   },
   font:{fontSize:40},
   square: {
-    backgroundColor: 'red',
-    height: 100,
-    width: 100,
+    backgroundColor: 'steelblue',
+    height: 300,
+    width: 400,
+    margin:10,
+    marginLeft:0,
     
-    borderRadius:20
+    borderRadius:20,
     
 },
 square2: {
-  backgroundColor: 'yellow',
-  height: 100,
-  width: 100,
-  
+  backgroundColor: 'skyblue',
+  height: 300,
+  width: 300,
+  margin:10,
+  marginLeft:0,
   borderRadius:20
   
 },
-square3: {
-  backgroundColor: 'green',
-  height: 100,
-  width: 100,
+
   
-  borderRadius:20
-  
-},
+
+
 });
