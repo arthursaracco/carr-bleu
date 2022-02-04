@@ -4,9 +4,10 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.square}></Text>
-      <StatusBar style="auto" />
-    </View>
+      <View style={styles.square} />
+      <View style={styles.square2} />
+      <View style={styles.square3} />
+     </View>
   );
 }
 
@@ -15,15 +16,33 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
+    marginBottom:80,
+    marginTop:80,
   },
   font:{fontSize:40},
   square: {
-    backgroundColor: 'skyblue',
-    height: 200,
-    width: 200,
-    borderColor: 'steelblue',
-    borderRadius:20,
-    borderWidth:3,
+    backgroundColor: 'red',
+    height: 100,
+    width: 100,
+    
+    borderRadius:20
+    
+},
+square2: {
+  backgroundColor: 'yellow',
+  height: 100,
+  width: 100,
+  
+  borderRadius:20
+  
+},
+square3: {
+  backgroundColor: 'green',
+  height: 100,
+  width: 100,
+  
+  borderRadius:20
+  
 },
 });
